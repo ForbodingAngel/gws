@@ -19,7 +19,7 @@
 /* all nav */
  
 :root {
-	--bottomlevel-bg-color: rgba(191,227,250,0.9);
+	--bottomlevel-bg-color: rgba(191,227,250,1);
 	--bottomlevel-bg-color-hover: rgba(19,154,237,0.3);
     
 	--firstlevel-bg-color: rgba(0,0,0,0.8);
