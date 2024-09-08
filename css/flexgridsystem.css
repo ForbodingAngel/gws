@@ -30,6 +30,10 @@
     flex-basis: 300px;
 }
 
+.flex-basis-225 {
+    flex-basis: 225px;
+}
+
 .flex-basis-150 {
     flex-basis: 150px;
 }

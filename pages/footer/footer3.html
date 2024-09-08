@@ -1,3 +1,29 @@
-<!-- sectiontitle:Living Documentation -->
+<!-- sectiontitle: -->
 
-Immerse yourself in the comprehensive documentation of the Simple Website Framework, right here on our website. Explore the various capabilities, features, and functionalities of our framework in real-time. From detailed tutorials to practical examples, dive deep into the heart of the Simple Website Framework and unleash your creativity like never before.
+<h6><i class="fa fa-envelope" aria-hidden="true"></i> Send Us a Message</h6>
+<br />
+<br />
+<div id="contact">
+	<div class="textalign-left">
+		<form onsubmit="sendEmail(); return false;">
+		<label for="subject">Subject:</label><br>
+		<input type="text" id="subject" name="subject" required><br>
+
+		<label for="message">Message:</label><br>
+		<textarea id="message" name="body" rows="4" cols="50" required></textarea><br><br>
+
+		<input type="submit" value="Send Email">
+		</form>
+
+		<script>
+		function sendEmail() {
+		var subject = document.getElementById("subject").value;
+		var message = document.getElementById("message").value;
+		var mailtoLink = "mailto:cs@glendorawindow.com" +
+		 "?subject=" + encodeURIComponent(subject) +
+		 "&body=" + encodeURIComponent(message);
+		window.location.href = mailtoLink;
+		}
+		</script>
+	</div>
+</div>

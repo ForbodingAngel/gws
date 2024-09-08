@@ -16,7 +16,8 @@
 13. Hero Elements
 14. Content Containers
 15. Footer Containers
-16. Code
+16. Input Fields
+17. Code
 **********************************************/
 
 /*********************************************
@@ -112,7 +113,7 @@ a:hover::before {
 	margin-top: 100px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 15%;
+	max-width: 380px;
 }
 
 /*********************************************
@@ -366,7 +367,7 @@ span.herotext {
 }
 
 .footercontent {
-	max-width: 90%;
+	max-width: 1600px;
 	margin-left: auto;
 	margin-right: auto;
 	color: #fff;
@@ -388,7 +389,56 @@ span.herotext {
 }
 
 /*********************************************
-* 16. Code
+* 16. Input Fields
+**********************************************/
+input[type="text"], textarea, input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(154,138,120,0.5);
+    border-radius: 4px;
+    background-color: #262626; /* Dark background color */
+    color: #fff; /* Text color */
+	text-shadow: 2px 2px 1px #000;
+}
+
+/* Focus styles */
+input[type="text"]:focus, textarea:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(154,138,120,1);
+    outline: none;
+    transition: all .3s ease-in-out;
+	text-shadow: 2px 2px 1px #000;
+}
+
+/* Styling the submit button */
+input[type="submit"] {
+    background-color: rgba(154,138,120,0.25); /* Green */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+	text-shadow: 2px 2px 1px #000;
+	box-shadow: 0px 0px 0px #000;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(154,138,120,0.5); /* Darker green */
+	box-shadow: 0px 0px 15px #000;
+    transition: all .3s ease-in-out;
+}
+
+/*********************************************
+* 17. Code
 **********************************************/
 code {
 	overflow-x: auto;

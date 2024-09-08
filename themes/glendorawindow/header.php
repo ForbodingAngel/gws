@@ -111,7 +111,7 @@
 	<div class="header">
 	<?php if ($pagename == "home") { ?>
 		<div class="companylogo">
-			<img src="images/GWI_Logo.svg" class="nodecoration">
+			<img src="images/GWI_Logo.svg" class="nodecoration small-min-width">
 		</div>
 	<?php } else { ?>
 

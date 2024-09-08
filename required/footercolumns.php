@@ -10,20 +10,20 @@ for ($i = 1; $i <= $numberFooterColumns; $i++) {
 
     // Check if the file exists
     if (file_exists($footerFile)) {
-        // Read the contents of the markdown file
-        $markdownContent = file_get_contents($footerFile);
+        // Read the contents of the file
+        $footerContent = file_get_contents($footerFile);
 
-        // Define the pattern to extract the section title from the markdown content
+        // Define the pattern to extract the section title from the content
         $pattern = '/<!-- sectiontitle:(.*?) -->/';
 
-        // Attempt to match the pattern in the markdown content
-        if (preg_match($pattern, $markdownContent, $matches)) {
+        // Attempt to match the pattern in the content
+        if (preg_match($pattern, $footerContent, $matches)) {
             // If a match is found, extract and store the section title
             $sectionTitles[] = trim($matches[1]);
         }
 
-        // Store the entire markdown content in the array for later use
-        $footerContents[] = from_markdown($markdownContent); // Store the output of from_markdown
+        // Store the entire content in the array for later use
+        $footerContents[] = $footerContent;
     } else {
         // If the file does not exist, you can handle it here (e.g., display an error message)
         // For now, let's assume an empty content and title
